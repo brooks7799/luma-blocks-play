@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "470164701842",
+    "project_id": "luma-blocks",
+    "storage_bucket": "luma-blocks.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470164701842:android:5c4641f2a8108f5cc8dc4b",
+        "android_client_info": {
+          "package_name": "co.createmagic.lumablocks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvrG-DdE65FVrEwtRcdSGqkMz9OH4NWOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
