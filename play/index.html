@@ -3,9 +3,33 @@
   <head><meta name="robots" content="noindex,nofollow">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Luma Blocks</title>
+    <title>Luma Blocks</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+<!-- LUMA_H5_ADS_BEGIN -->
+    <!-- Google H5 Games Ads — AdSense for Games' Ad Placement API.
+         https://developers.google.com/ad-placement
+
+         The three LUMA_H5_* tokens below are rewritten at build time by
+         GameSceneBuilder.StampWebGLAds from Assets/Game/Resources/Magic/AdSettings.asset,
+         and this whole block is deleted when AdSettings.h5Enabled is off —
+         a build with web ads switched off must not load the script at all.
+
+         The second script is Google's own snippet verbatim in effect, with
+         one change: adBreak and adConfig are assigned onto `window` rather
+         than declared with `const`. Unity's jslib code runs inside the
+         framework's own closure and reaches the page through `window`, so a
+         script-scoped binding would be invisible to it. -->
+    <script async
+      data-ad-frequency-hint="30s"
+      data-adbreak-test="on"
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3614947646335682"
+      crossorigin="anonymous"></script>
+    <script>
+      window.adsbygoogle = window.adsbygoogle || [];
+      window.adBreak = window.adConfig = function (o) { window.adsbygoogle.push(o); };
+    </script>
+<!-- LUMA_H5_ADS_END -->
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -52,12 +76,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGL.loader.js?v=20260911153531";
+      var loaderUrl = buildUrl + "/WebGL.loader.js?v=20260911160530";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/WebGL.data.unityweb?v=20260911153531",
-        frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb?v=20260911153531",
-        codeUrl: buildUrl + "/WebGL.wasm.unityweb?v=20260911153531",
+        dataUrl: buildUrl + "/WebGL.data.unityweb?v=20260911160530",
+        frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb?v=20260911160530",
+        codeUrl: buildUrl + "/WebGL.wasm.unityweb?v=20260911160530",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Create Magic",
         productName: "Luma Blocks",
